@@ -26,7 +26,7 @@ Inspirado en las mejores prácticas públicas de ingeniería de agentes: el patr
 | Agente | Rol | Skills que usa |
 |---|---|---|
 | `orchestrator` | Jefe: decide, delega, arbitra, consolida. Los ajustes pequeños los hace él mismo; lo grande siempre se delega | `sdd`, `delegation` |
-| `designer` | UI/UX: specs, tokens de diseño y auditoría visual | `impeccable` (siempre) |
+| `designer` | UI/UX: specs, tokens de diseño y auditoría visual | `impeccable` (siempre; de terceros, se instala aparte) |
 | `frontend` | Implementa interfaces con accesibilidad y estados completos | — |
 | `backend` | APIs, datos, tests, validación de entradas | — |
 | `developer` | Desarrollo general: ajustes medianos, refactors, scripts, config | — |
