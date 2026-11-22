@@ -46,7 +46,13 @@ Todos los agentes tienen `websearch` + `webfetch` para investigar en internet cu
   npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit --global
   ```
 
-- **`impeccable`** (la usa el `designer`) — skill de diseño de terceros; instálala desde su fuente oficial (búscala como *impeccable* en [skills.sh](https://www.skills.sh) o en GitHub) y cópiala en tu carpeta de skills globales. Sin ella el `designer` sigue trabajando, pero pierde su estándar de calidad.
+- **`impeccable`** (la usa el `designer`) — skill de diseño de terceros de [Paul Bakaus](https://github.com/pbakaus/impeccable) ([impeccable.style](https://impeccable.style)), con soporte oficial para OpenCode. Instálala con su instalador oficial:
+
+  ```bash
+  npx impeccable install
+  ```
+
+  Sin ella el `designer` sigue trabajando, pero pierde su estándar de calidad.
 
 > **Nota:** las skills NO se descargan solas. OpenCode solo carga las que existen en tu disco (o en un catálogo HTTP configurado en `skills` de `opencode.json`). Las skills de este repo se instalan copiando las carpetas; las dos de arriba se instalan aparte porque son de terceros.
 
@@ -132,6 +138,7 @@ Las plantillas de cada artefacto están en [`skills/sdd/references/`](skills/sdd
 - [How we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system) — Anthropic (patrón orchestrator-worker, briefings, escalado de esfuerzo, compuertas)
 - [GitHub Spec Kit](https://github.com/github/spec-kit) — flujo Spec-Driven Development (constitución → spec → plan → tasks → implement → converge)
 - [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) — la skill de auditoría de seguridad que usa el `security-auditor`
+- [Impeccable](https://github.com/pbakaus/impeccable) ([impeccable.style](https://impeccable.style)) de Paul Bakaus — la skill de diseño que usa el `designer`
 - [Documentación de OpenCode V2](https://opencode.ai/docs/) — agentes, skills, permisos y comandos
 
 ## Licencia
