@@ -2,7 +2,9 @@
 
 [![Skills](https://skills.sh/b/josevdr95new/opencode-team)](https://skills.sh/josevdr95new/opencode-team) ![License](https://img.shields.io/badge/license-MIT-blue.svg) ![Built for](https://img.shields.io/badge/built%20for-OpenCode%20V2-7c3aed)
 
-**[EN]** A multi-agent development team for [OpenCode](https://opencode.ai): an orchestrator boss that delegates to specialized subagents (design, frontend, backend, general dev, debugging, security audit) with a Spec-Driven Development workflow, quality gates, and ready-to-install skills & commands. Docs in Spanish — agents understand any language.
+[![Español](https://img.shields.io/badge/docs-Espa%C3%B1ol-blue)](README.md) [![English](https://img.shields.io/badge/docs-English-blue)](README.en.md)
+
+**[EN]** A multi-agent development team for [OpenCode](https://opencode.ai): an orchestrator boss that delegates to specialized subagents (design, frontend, backend, general dev, debugging, security audit) with a Spec-Driven Development workflow, quality gates, and ready-to-install skills & commands. Docs in Spanish — agents understand any language. **[Full English README →](README.en.md)**
 
 Sistema de equipo de desarrollo para [OpenCode](https://opencode.ai) dirigido por un **orquestador**: tú le escribes solo a él, él analiza, decide, delega en los especialistas, verifica la calidad y te reporta.
 
