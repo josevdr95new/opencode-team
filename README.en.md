@@ -146,7 +146,7 @@ Talk to the orchestrator directly (it's the default agent), or use the commands:
 
 ## Keywords
 
-`multi-agent team` · `opencode agents` · `orchestrator subagents` · `spec driven development` · `spec kit workflow` · `agent skills team` · `code review agent` · `security audit skill` · `AI coding team`
+`multi-agent team` · `opencode agents` · `orchestrator subagents` · `spec driven development` · `spec kit workflow` · `claude-skills compatible` · `agentic-ai team` · `agent skills team` · `code review agent` · `security audit skill` · `AI coding team`
 
 ## License
 

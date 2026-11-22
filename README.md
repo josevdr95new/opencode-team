@@ -156,7 +156,7 @@ Las plantillas de cada artefacto están en [`skills/sdd/references/`](skills/sdd
 
 ## Palabras clave / Keywords
 
-`multi-agent team` · `opencode agents` · `orchestrator subagents` · `equipo de agentes IA` · `spec driven development` · `SDD en español` · `spec kit workflow` · `agent skills team` · `code review agent` · `security audit skill` · `impeccable design skill` · `TDD verification` · `AI coding team` · `calidad de código con IA` · `debugging sistemático`
+`multi-agent team` · `opencode agents` · `orchestrator subagents` · `equipo de agentes IA` · `spec driven development` · `SDD en español` · `spec kit workflow` · `claude-skills compatible` · `agentic-ai team` · `agent skills team` · `code review agent` · `security audit skill` · `impeccable design skill` · `TDD verification` · `AI coding team` · `calidad de código con IA` · `debugging sistemático`
 
 ## Licencia
 
