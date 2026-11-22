@@ -39,6 +39,8 @@ Inspirado en las mejores prácticas públicas de ingeniería de agentes: el patr
 | `debugger` | Causa raíz + fix mínimo + test de regresión; revisa código | `systematic-debugging`, `browser`, `code-review` |
 | `security-auditor` | Auditoría OWASP de solo lectura con hallazgos por severidad | `security-audit` (de Cloudflare, se instala aparte) |
 
+*Además, sin instalar nada — integrados de OpenCode que el orquestador puede lanzar: `explore` (investigación de código/web, solo lectura) y `general` (investigación multi-paso).*
+
 Todos los agentes tienen `websearch` + `webfetch` para investigar en internet cuando lo necesitan.
 
 ## Instalación

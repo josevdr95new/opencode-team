@@ -1,6 +1,6 @@
 # 🤖 OpenCode Team — Multi-Agent Team with SDD
 
-[![Español](https://img.shields.io/badge/docs-Espa%C3%B1ol-blue)](README.md) [![English](https://img.shields.io/badge/docs-English-blue)](README.en.md) ![License](https://img.shields.io/badge/license-MIT-blue.svg)
+[![Español](https://img.shields.io/badge/docs-Espa%C3%B1ol-blue)](README.md) [![English](https://img.shields.io/badge/docs-English-blue)](README.en.md) ![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Skills](https://skills.sh/b/josevdr95new/opencode-team)](https://skills.sh/josevdr95new/opencode-team)
 
 > 🇪🇸 **Versión en español:** [README.md](README.md)
 
@@ -36,6 +36,8 @@ Inspired by public best practices in agent engineering: Anthropic's *orchestrato
 | `developer` | General development: mid-size changes, refactors, scripts, config | — |
 | `debugger` | Root cause + minimal fix + regression test; reviews code | `systematic-debugging`, `browser`, `code-review` |
 | `security-auditor` | Read-only OWASP audit with severity-ranked findings | `security-audit` (by Cloudflare, installed separately) |
+
+*Also available to the orchestrator without installing anything — OpenCode built-ins: `explore` (code/web research, read-only) and `general` (multi-step research).*
 
 All agents have `websearch` + `webfetch` to research the internet whenever they need to.
 
