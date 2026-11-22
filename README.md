@@ -1,6 +1,6 @@
 # 🤖 OpenCode Team — Equipo multi-agente con SDD
 
-[![Skills](https://skills.sh/b/josevdr95new/opencode-team)](https://skills.sh/josevdr95new/opencode-team) ![License](https://img.shields.io/badge/license-MIT-blue.svg) ![Built for](https://img.shields.io/badge/built%20for-OpenCode%20V2-7c3aed)
+[![Stars](https://img.shields.io/github/stars/josevdr95new/opencode-team?style=flat&logo=github)](https://github.com/josevdr95new/opencode-team/stargazers) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Built for](https://img.shields.io/badge/built%20for-OpenCode%20V2-7c3aed)](https://opencode.ai) [![Skills](https://img.shields.io/badge/agent%20skills-5%20ready-10b981)](#el-equipo)
 
 [![Español](https://img.shields.io/badge/docs-Espa%C3%B1ol-blue)](README.md) [![English](https://img.shields.io/badge/docs-English-blue)](README.en.md)
 
