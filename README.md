@@ -40,21 +40,26 @@ Todos los agentes tienen `websearch` + `webfetch` para investigar en internet cu
 ### Requisitos
 
 - [OpenCode V2](https://opencode.ai/docs/)
-- **`security-audit`** (la usa el `security-auditor`) — skill de [Cloudflare](https://github.com/cloudflare/security-audit-skill), licencia MIT. Instálala globalmente:
+
+> **✅ NO hace falta instalar las skills de terceros manualmente.** La primera vez que trabajes en un proyecto, el orquestador verifica si `security-audit` e `impeccable` están instaladas y, si falta alguna, **la descarga e instala automáticamente** con los comandos oficiales de abajo. Solo pide tu aprobación la primera vez (y requiere Node.js). El resultado queda registrado en `.team/skills-check.md` y no vuelve a verificar en ese proyecto. Los comandos manuales de abajo son solo una alternativa si prefieres hacerlo tú.
+
+### Instalación manual (opcional)
+
+- **`security-audit`** (la usa el `security-auditor`) — skill de [Cloudflare](https://github.com/cloudflare/security-audit-skill), licencia MIT:
 
   ```bash
   npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit --global
   ```
 
-- **`impeccable`** (la usa el `designer`) — skill de diseño de terceros de [Paul Bakaus](https://github.com/pbakaus/impeccable) ([impeccable.style](https://impeccable.style)), con soporte oficial para OpenCode. Instálala con su instalador oficial:
+- **`impeccable`** (la usa el `designer`) — skill de diseño de [Paul Bakaus](https://github.com/pbakaus/impeccable) ([impeccable.style](https://impeccable.style)), con soporte oficial para OpenCode:
 
   ```bash
   npx impeccable install
   ```
 
-  Sin ella el `designer` sigue trabajando, pero pierde su estándar de calidad.
+Sin ellas el `designer` o el `security-auditor` siguen trabajando en modo degradado (pierden su estándar de diseño o su método completo de auditoría), pero el equipo no se bloquea.
 
-> **Nota:** las skills NO se descargan solas. OpenCode solo carga las que existen en tu disco (o en un catálogo HTTP configurado en `skills` de `opencode.json`). Las skills de este repo se instalan copiando las carpetas; las dos de arriba se instalan aparte porque son de terceros.
+> **Nota:** las skills del propio repo (`sdd`, `delegation`, `code-review`, `systematic-debugging`) sí viajan con él: se instalan copiando las carpetas como se explica abajo. Las dos de terceros se instalan aparte porque no podemos redistribuirlas.
 
 ### Opción A — Global (recomendado)
 
