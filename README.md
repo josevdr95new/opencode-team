@@ -31,7 +31,7 @@ Inspirado en las mejores prácticas públicas de ingeniería de agentes: el patr
 | `backend` | APIs, datos, tests, validación de entradas | — |
 | `developer` | Desarrollo general: ajustes medianos, refactors, scripts, config | — |
 | `debugger` | Causa raíz + fix mínimo + test de regresión; revisa código | `systematic-debugging`, `browser`, `code-review` |
-| `security-auditor` | Auditoría OWASP de solo lectura con hallazgos por severidad | `security-audit` (integrada en OpenCode) |
+| `security-auditor` | Auditoría OWASP de solo lectura con hallazgos por severidad | `security-audit` (de Cloudflare, se instala aparte) |
 
 Todos los agentes tienen `websearch` + `webfetch` para investigar en internet cuando lo necesitan.
 
@@ -40,8 +40,15 @@ Todos los agentes tienen `websearch` + `webfetch` para investigar en internet cu
 ### Requisitos
 
 - [OpenCode V2](https://opencode.ai/docs/)
-- (Recomendado) La skill [`impeccable`](https://github.com/OpenCodeAgents/impeccable) instalada globalmente — el `designer` la usa como estándar de diseño. Sin ella, el designer trabaja pero pierde su referencia de calidad.
-- La skill `security-audit` ya viene integrada en OpenCode; no hay que instalar nada.
+- **`security-audit`** (la usa el `security-auditor`) — skill de [Cloudflare](https://github.com/cloudflare/security-audit-skill), licencia MIT. Instálala globalmente:
+
+  ```bash
+  npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit --global
+  ```
+
+- **`impeccable`** (la usa el `designer`) — skill de diseño de terceros; instálala desde su fuente oficial (búscala como *impeccable* en [skills.sh](https://www.skills.sh) o en GitHub) y cópiala en tu carpeta de skills globales. Sin ella el `designer` sigue trabajando, pero pierde su estándar de calidad.
+
+> **Nota:** las skills NO se descargan solas. OpenCode solo carga las que existen en tu disco (o en un catálogo HTTP configurado en `skills` de `opencode.json`). Las skills de este repo se instalan copiando las carpetas; las dos de arriba se instalan aparte porque son de terceros.
 
 ### Opción A — Global (recomendado)
 
@@ -124,6 +131,7 @@ Las plantillas de cada artefacto están en [`skills/sdd/references/`](skills/sdd
 
 - [How we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system) — Anthropic (patrón orchestrator-worker, briefings, escalado de esfuerzo, compuertas)
 - [GitHub Spec Kit](https://github.com/github/spec-kit) — flujo Spec-Driven Development (constitución → spec → plan → tasks → implement → converge)
+- [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) — la skill de auditoría de seguridad que usa el `security-auditor`
 - [Documentación de OpenCode V2](https://opencode.ai/docs/) — agentes, skills, permisos y comandos
 
 ## Licencia
