@@ -2,7 +2,7 @@
 
 ![OpenCode Team — Equipo multi-agente con SDD](assets/social-preview.png)
 
-[![Stars](https://img.shields.io/github/stars/josevdr95new/opencode-team?style=flat&logo=github)](https://github.com/josevdr95new/opencode-team/stargazers) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Built for](https://img.shields.io/badge/built%20for-OpenCode%20V2-7c3aed)](https://opencode.ai) [![Skills](https://img.shields.io/badge/agent%20skills-5%20ready-10b981)](#el-equipo)
+[![Stars](https://img.shields.io/github/stars/josevdr95new/opencode-team?style=flat&logo=github)](https://github.com/josevdr95new/opencode-team/stargazers) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Built for](https://img.shields.io/badge/built%20for-OpenCode%20V2-7c3aed)](https://opencode.ai) [![Skills](https://img.shields.io/badge/agent%20skills-4%20included-10b981)](#equipo)
 
 [![Español](https://img.shields.io/badge/docs-Espa%C3%B1ol-blue)](README.md) [![English](https://img.shields.io/badge/docs-English-blue)](README.en.md)
 
@@ -95,7 +95,7 @@ No hace falta reiniciar OpenCode: recarga la config sola al guardar.
 Copia las mismas carpetas dentro de `.opencode/` del proyecto:
 
 ```bash
-cp -r agents skills commands  tu-proyecto/.opencode/
+cp -r agents skills commands tu-proyecto/.opencode/
 ```
 
 ## Uso

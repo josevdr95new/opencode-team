@@ -2,7 +2,7 @@
 
 ![OpenCode Team banner](assets/social-preview.png)
 
-[![Stars](https://img.shields.io/github/stars/josevdr95new/opencode-team?style=flat&logo=github)](https://github.com/josevdr95new/opencode-team/stargazers) [![Español](https://img.shields.io/badge/docs-Espa%C3%B1ol-blue)](README.md) [![English](https://img.shields.io/badge/docs-English-blue)](README.en.md) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Built for](https://img.shields.io/badge/built%20for-OpenCode%20V2-7c3aed)](https://opencode.ai) [![Skills](https://img.shields.io/badge/agent%20skills-5%20ready-10b981)](#the-team)
+[![Stars](https://img.shields.io/github/stars/josevdr95new/opencode-team?style=flat&logo=github)](https://github.com/josevdr95new/opencode-team/stargazers) [![Español](https://img.shields.io/badge/docs-Espa%C3%B1ol-blue)](README.md) [![English](https://img.shields.io/badge/docs-English-blue)](README.en.md) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Built for](https://img.shields.io/badge/built%20for-OpenCode%20V2-7c3aed)](https://opencode.ai) [![Skills](https://img.shields.io/badge/agent%20skills-4%20included-10b981)](#the-team)
 
 > 🇪🇸 **Versión en español:** [README.md](README.md)
 
@@ -63,7 +63,7 @@ Templates for every artifact live in [`skills/sdd/references/`](skills/sdd/refer
 
 Requirements: [OpenCode V2](https://opencode.ai/docs/).
 
-> **✅ You do NOT need to install the third-party skills manually.** The first time you work on a project, the orchestrator checks whether `security-audit` and `impeccable` are installed and, if one is missing, **downloads and installs it automatically** using the official commands below. It only asks for your approval the first time (requires Node.js). The result is recorded in `.team/skills-check.md` and it won't check again in that project.
+> **✅ You do NOT need to install the third-party skills manually.** The first time you work on a project, the orchestrator checks whether `security-audit` and `impeccable` are installed and, if one is missing, **downloads and installs it automatically** using the official commands below. It only asks for your approval the first time (requires Node.js). The result is recorded in `.team/skills-check.md` and it won't check again in that project. The manual commands below are just an alternative if you prefer to do it yourself.
 
 ### Option A — Global (recommended)
 
@@ -86,7 +86,11 @@ No restart needed: OpenCode reloads its config on save.
 
 ### Option B — Per project
 
-Copy the same folders into the project's `.opencode/` directory.
+Copy the same folders into the project's `.opencode/` directory:
+
+```bash
+cp -r agents skills commands your-project/.opencode/
+```
 
 ### Manual install of third-party skills (optional)
 
